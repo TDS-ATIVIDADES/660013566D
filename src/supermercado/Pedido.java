@@ -3,29 +3,27 @@ package supermercado;
 public class Pedido {
     private int numeroPedido;
     private CarrinhoDeCompras carrinho;
-    private String cliente;
-    private String cpf;
-    private String email;
+    private Cliente cliente;
     
     public int getNumeroPedido() {
         return this.numeroPedido;
     }
 
     public String getNomeCliente() {
-        return this.cliente;
+        return this.cliente.getNome();
     }
 
     public String getCpfCliente() {
-        return this.cpf;
+        return this.cliente.getCpf();
     }
 
     public String getEmailCliente() {
-        return email;
+        return this.cliente.getEmail();
     }   
-    
+
     public void fecharPedido() {
         System.out.println("Numero do pedido: " + numeroPedido);
-        System.out.println("Cliente: " + cliente);
+        System.out.println("Cliente: " + cliente.getNome());
         System.out.println("Total do pedido: " + this.carrinho.calcularTotal());
         System.out.println("=====================================");
     }
