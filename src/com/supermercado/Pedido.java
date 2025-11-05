@@ -1,4 +1,4 @@
-package supermercado;
+package com.supermercado;
 
 public class Pedido {
     private int numeroPedido;
