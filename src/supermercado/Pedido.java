@@ -23,7 +23,9 @@ public class Pedido {
 
     public void fecharPedido() {
         System.out.println("Numero do pedido: " + numeroPedido);
-        System.out.println("Cliente: " + cliente.getNome());
+        if(this.cliente != null) {
+            System.out.println("Cliente: " + cliente.getNome());
+        }
         System.out.println("Total do pedido: " + this.carrinho.calcularTotal());
         System.out.println("=====================================");
     }
