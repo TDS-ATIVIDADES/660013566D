@@ -18,7 +18,7 @@ public class CarrinhoDeCompras {
     public double calcularTotal() {
         double total = 0;
         for (Produto produto : produtos) {
-            total += produto.getQuantidade() * produto.getPrecoUnitario();
+            total += produto.calcularTotal();
         }
         return total;
     }
