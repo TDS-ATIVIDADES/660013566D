@@ -4,15 +4,15 @@ public class Supermercado {
 
     public static void main(String[] args) {
 
-        CarrinhoDeCompras c = new CarrinhoDeCompras();
-        c.adicionarProduto("Arroz", 1, 3.99);
-        c.adicionarProduto("Filé de frango sassami", 2, 21.99);
-        c.calcularTotal();
+        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+        carrinho.adicionarProduto("Arroz", 1, 3.99);
+        carrinho.adicionarProduto("Filé de frango sassami", 2, 21.99);
+        carrinho.calcularTotal();
 
-        Pedido p = new Pedido();
-        p.setNumeroPedido(1);
-        p.setCarrinho(c);
-        p.fecharPedido();
+        Pedido pedido = new Pedido();
+        pedido.setNumeroPedido(1);
+        pedido.setCarrinho(carrinho);
+        pedido.fecharPedido();
 
     }
 }
