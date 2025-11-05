@@ -9,25 +9,12 @@ public class Pedido {
         return this.numeroPedido;
     }
 
-    public String getNomeCliente() {
-        return this.cliente.getNome();
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
-    public String getCpfCliente() {
-        return this.cliente.getCpf();
-    }
-
-    public String getEmailCliente() {
-        return this.cliente.getEmail();
-    }   
-
-    public void fecharPedido() {
-        System.out.println("Numero do pedido: " + numeroPedido);
-        if(this.cliente != null) {
-            System.out.println("Cliente: " + cliente.getNome());
-        }
-        System.out.println("Total do pedido: " + this.carrinho.calcularTotal());
-        System.out.println("=====================================");
+    public Cliente getCliente() {
+        return this.cliente;
     }
     
     public CarrinhoDeCompras getCarrinho() {
