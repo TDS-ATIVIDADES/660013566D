@@ -20,8 +20,8 @@ public class Produto {
         return precoUnitario;
     }
     
-    public double calcularTotal(double preco, int quantidade) {
-        return  preco * quantidade;
+    public double calcularTotal() {
+        return this.precoUnitario * this.quantidade;
     }
 
 }
