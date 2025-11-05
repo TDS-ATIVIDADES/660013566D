@@ -1,6 +1,6 @@
 package com.supermercado;
 
-public class Supermercado {
+public class App {
 
     public static void main(String[] args) {
 
