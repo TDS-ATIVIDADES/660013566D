@@ -17,6 +17,10 @@ public class Pedido {
         return this.cliente;
     }
     
+    public double calcularTotal() {
+        return carrinho.calcularTotal();
+    }
+    
     public CarrinhoDeCompras getCarrinho() {
         return carrinho;
     }

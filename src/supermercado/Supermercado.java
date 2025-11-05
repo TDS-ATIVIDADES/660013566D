@@ -17,7 +17,17 @@ public class Supermercado {
         Pedido pedido = new Pedido();
         pedido.setNumeroPedido(1);
         pedido.setCarrinho(carrinho);
-        pedido.fecharPedido();
+        
+        imprimirPedido(pedido);
+    }
+    
+    public static void imprimirPedido(Pedido pedido) {
+        System.out.println("Numero do pedido: " + pedido.getNumeroPedido());
+        if(pedido.getCliente() != null) {
+            System.out.println("Cliente: " + pedido.getCliente().getNome());
+        }
+        System.out.println("Total do pedido: " + pedido.calcularTotal());
+        System.out.println("=====================================");
 
     }
 }
